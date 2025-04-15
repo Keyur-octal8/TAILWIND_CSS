@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+</head>
+
+<body>
+    <div class="text-center bg-yellow-500 text-5xl my-10">Justify Content</div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Start</div>
+    <div class="flex justify-start gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Center</div>
+    <div class="flex justify-center gap-4">
+        <div class="bg-blue-500 text-white p-6 rounded-xl">01</div>
+        <div class="bg-blue-500 text-white p-6 rounded-xl">02</div>
+        <div class="bg-blue-500 text-white p-6 rounded-xl">03</div>
+        <div class="bg-blue-500 text-white p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">End</div>
+    <div class="flex justify-end gap-4">
+        <div class="bg-purple-500 p-6 rounded-xl">01</div>
+        <div class="bg-purple-500 p-6 rounded-xl">02</div>
+        <div class="bg-purple-500 p-6 rounded-xl">03</div>
+        <div class="bg-purple-500 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Justify-between</div>
+    <div class="flex justify-between gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Justify-around</div>
+    <div class="flex justify-around gap-4">
+        <div class="bg-blue-500 p-6 rounded-xl">01</div>
+        <div class="bg-blue-500 p-6 rounded-xl">02</div>
+        <div class="bg-blue-500 p-6 rounded-xl">03</div>
+        <div class="bg-blue-500 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Justify-evenly</div>
+    <div class="flex justify-evenly gap-4">
+        <div class="bg-purple-500 p-6 rounded-xl">01</div>
+        <div class="bg-purple-500 p-6 rounded-xl">02</div>
+        <div class="bg-purple-500 p-6 rounded-xl">03</div>
+        <div class="bg-purple-500 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Justify-normal</div>
+    <div class="flex justify-normal gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="text-center bg-yellow-500 text-5xl my-10">Justify Items</div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Start  --  center  -- end</div>
+    <div class="flex gap-4 justify-center my-5 content-start">
+        <div class="border-2 border-pink-500 flex justify-start w-96 py-2">
+            <div class="bg-pink-500 p-6 rounded-xl w-20">01</div>
+        </div>
+        <div class="border-2 border-pink-500 flex justify-center w-96 py-2">
+            
+            <div class="bg-pink-500 p-6 rounded-xl w-20">02</div>
+        </div>
+        <div class="border-2 border-pink-500 flex justify-end w-96 py-2">
+            <div class="bg-pink-500 p-6 rounded-xl w-20">03</div>
+        </div>
+    </div>
+
+    <div class="text-center bg-yellow-500 text-5xl my-10">Align Content</div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">items-start</div>
+    <div class="flex gap-4 mx-auto items-start border-2 border-pink-500 h-96 w-96">
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">items-center</div>
+
+    <div class="flex gap-4 mx-auto items-center border-2 border-pink-500 h-96 w-96">
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">items-end</div>
+
+    <div class="flex gap-4 mx-auto items-end border-2 border-pink-500 h-96 w-96">
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 h-24 rounded-xl">04</div>
+    </div>
+    
+</body>
+
+</html>

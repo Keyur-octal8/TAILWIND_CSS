@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+    <div class="text-center bg-yellow-500 text-5xl my-10">Position</div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Static</div>
+
+    <div class="static bg-purple-400 h-40 text-5xl max-w-md mx-auto mb-10 border-4 border-gray-500 rounded-xl">
+        <p>Static Parent</p>
+        <div class="absolute bg-blue-400 p-2 top-[21rem] left-[40rem] rounded-2xl border-4 border-black">
+            <p>Absolute child</p>
+        </div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-20">Relative</div>
+
+    <div class="relative bg-purple-400 h-40 text-5xl max-w-md mx-auto mb-10 border-4 border-gray-500 rounded-xl">
+        <p>Relative Parent</p>
+        <div class="absolute bg-blue-400 p-2 top-[6rem]  rounded-2xl border-4 border-black">
+            <p>Absolute child</p>
+        </div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-20">Absolutely positioning elements</div>
+
+
+    <div class="static bg-gray-400 text-5xl container mx-auto mb-10 border-4 border-gray-500 rounded-xl p-10">
+        <h1>With Static Positioning</h1>
+        <div
+            class="w-80% h-96 relative bg-purple-400 text-2xl py-20 px-5 my-10 border-4 gap-3 border-gray-500 rounded-xl">
+            Relative parent
+            <div class="flex gap-3 mt-5 absolute bottom-10">
+                <div class="text-center bg-white w-64 h-16 py-3 border-4 border-black rounded-xl">
+                    <p>Static child</p>
+                </div>
+                <div class="text-center bg-white w-64 h-16 border-4 border-black py-3 rounded-xl">
+                    <p>Static sibling</p>
+                </div>
+            </div>
+        </div>
+        <h1>With absolute positioning</h1>
+
+        <div
+            class="w-80% h-96 bg-purple-400 py-20 relative px-5 text-2xl mx-auto my-10 border-4 border-gray-500 rounded-xl">
+            Relative parent
+            <div class="flex gap-3 mt-5 ">
+                <div
+                    class="text-center  absolute right-10 bottom-[22rem] bg-white w-64 h-16 py-3 border-4 border-black rounded-xl">
+                    <p>Absolute child</p>
+                </div>
+                <div class="text-center bg-white absolute bottom-5 w-64 h-16 border-4 border-black py-3 rounded-xl">
+                    <p>Static sibling</p>
+                </div>
+                <div
+                    class="text-center bg-white absolute bottom-5 right-10 hidden w-64 h-16 border-4 border-black py-3 rounded-xl">
+                    <p>Static sibling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-auto text-center bg-green-500 text-5xl my-20">Fixed positioning elements</div>
+
+    <div class="flex flex-col gap-3 rounded-xl w-96 shadow-2xl border-8 border-gray-700 shadow-black mb-10 mx-auto h-96 overflow-auto divide-y divide-black">
+
+        <div class="sticky top-0 px-5 p-2 z-10 bg-gray-400 text-blue-800 text-2xl font-bold">A</div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 50.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Alice Anderson</strong>
+                <span class="text-slate-600 text-sm font-medium">Product Manager</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 51.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Adam Allen</strong>
+                <span class="text-slate-600 text-sm font-medium">Software Engineer</span>
+            </div>
+        </div>
+        
+
+        <div class="sticky top-0 px-5 p-2 z-10 bg-gray-400 text-2xl text-green-800 font-bold">B</div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 52.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Ben Bradley</strong>
+                <span class="text-slate-600 text-sm font-medium">Marketing Director</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 53.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Bella Brooks</strong>
+                <span class="text-slate-600 text-sm font-medium">HR Manager</span>
+            </div>
+        </div>
+        
+
+        <div class="sticky top-0 px-5 p-2 z-10 bg-gray-400 text-2xl font-bold text-purple-800">C</div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 54.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Catherine Clark</strong>
+                <span class="text-slate-600 text-sm font-medium">Design Lead</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 55.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Chris Carter</strong>
+                <span class="text-slate-600 text-sm font-medium">UX/UI Designer</span>
+            </div>
+        </div>
+        
+
+        <div class="sticky top-0 px-5 p-2 z-10 bg-gray-400 text-2xl text-pink-500 font-bold">D</div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 56.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">David Duncan</strong>
+                <span class="text-slate-600 text-sm font-medium">CTO</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 50.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Diana Davis</strong>
+                <span class="text-slate-600 text-sm font-medium">Product Designer</span>
+            </div>
+        </div>
+        
+
+        <div class="sticky top-0 px-5 p-2 z-10 bg-gray-400 text-2xl text-orange-700 font-bold">E</div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 51.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Eva Evans</strong>
+                <span class="text-slate-600 text-sm font-medium">Content Writer</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 52.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Ethan Edwards</strong>
+                <span class="text-slate-600 text-sm font-medium">Senior Developer</span>
+            </div>
+        </div>
+        <div class="sticky top-0 px-5 p-2 z-10 bg-gray-400 text-2xl font-bold">F</div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 53.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Franklin Ford</strong>
+                <span class="text-slate-600 text-sm font-medium">Data Analyst</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 54.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Fiona Fisher</strong>
+                <span class="text-slate-600 text-sm font-medium">Quality Assurance</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 55.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Freddie Foster</strong>
+                <span class="text-slate-600 text-sm font-medium">Business Analyst</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 56.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Faith Flynn</strong>
+                <span class="text-slate-600 text-sm font-medium">Sales Manager</span>
+            </div>
+        </div>
+        <div class="relative rounded-xl">
+            <img class="w-20 h-20 border-4 absolute rounded-full border-black" src="./images/asset 50.jpeg" alt="Profile image">
+            <div class="flex flex-col py-5 pl-24">
+                <strong class="text-slate-900 text-sm font-medium">Felix Fisher</strong>
+                <span class="text-slate-600 text-sm font-medium">SEO Specialist</span>
+            </div>
+        </div>  
+    </div>
+      
+
+</body>
+
+</html>

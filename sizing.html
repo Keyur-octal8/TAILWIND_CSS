@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <style>
+        .cross-lines {
+            background-image: linear-gradient(0deg, black 10%, transparent 25%);
+            background-size: 10px 10px;
+            background-position: 0 0, 0 0;
+        }
+        .cross-lines2{
+            background-image: linear-gradient(90deg, black 10%, transparent 25%);
+            background-size: 10px 10px;
+            background-position: 0 0, 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center bg-yellow-500 text-5xl my-10">Sizing</div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Width</div>
+    <div class="flex flex-col gap-4 text-center">
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-1/6 bg-pink-500 p-6 rounded-xl">1/6</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-1/5 bg-pink-500 p-6 rounded-xl">1/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-1/4 bg-pink-500 p-6 rounded-xl">1/4</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-1/3 bg-pink-500 p-6 rounded-xl">1/3</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-2/5 bg-pink-500 p-6 rounded-xl">2/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-1/2 bg-pink-500 p-6 rounded-xl">1/2</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-3/5 bg-pink-500 p-6 rounded-xl">3/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-2/3 bg-pink-500 p-6 rounded-xl">2/3</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-3/4 bg-pink-500 p-6 rounded-xl">3/4</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-4/5 bg-pink-500 p-6 rounded-xl">4/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-5/6 bg-pink-500 p-6 rounded-xl">5/6</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines2">
+            <div class="w-full bg-pink-500 p-6 rounded-xl">Full</div>
+        </div>
+    </div>
+    
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10 p-4">
+        Height
+    </div>
+    <div class="gap-4 flex flex-wrap justify-center h-96">
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-min bg-pink-500 p-6 rounded-xl flex items-center justify-center">Min</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-max bg-pink-500 p-6 rounded-xl flex items-center justify-center">Max</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-fit bg-pink-500 p-6 rounded-xl flex items-center justify-center">Fit</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-1/6 bg-pink-500 p-6 rounded-xl flex items-center justify-center">1/6</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-1/5 bg-pink-500 p-6 rounded-xl flex items-center justify-center">1/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-1/4 bg-pink-500 p-6 rounded-xl flex items-center justify-center">1/4</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-1/3 bg-pink-500 p-6 rounded-xl flex items-center justify-center">1/3</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-2/5 bg-pink-500 p-6 rounded-xl flex items-center justify-center">2/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-1/2 bg-pink-500 p-6 rounded-xl flex items-center justify-center">1/2</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-3/5 bg-pink-500 p-6 rounded-xl flex items-center justify-center">3/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-2/3 bg-pink-500 p-6 rounded-xl  flex items-center justify-center">2/3</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-3/4 bg-pink-500 p-6 rounded-xl  flex items-center justify-center">3/4</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-4/5 bg-pink-500 p-6 rounded-xl  flex items-center justify-center">4/5</div>
+        </div>
+        <div class="border-2 border-black p-2 cross-lines">
+            <div class="h-5/6 bg-pink-500 p-6 rounded-xl  flex items-center justify-center">5/6</div>
+        </div>
+    </div>
+</body>
+
+</html>

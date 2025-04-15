@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @layer utilities {
+        .slider-overflow::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-r from-[#07233B] via-[#041D34] to-[#050C16] min-h-screen bg-no-repeat"
+  >
+    <nav class="sticky top-0 z-10 bg-black">
+      <div class="mx-auto max-w-7xl px-6 py-5">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="lg:hidden">
+            <button
+              type="button"
+              id="mobile-menu-toggle"
+              class="text-gray-400 hover:bg-gray-700 focus:ring-2 focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="flex">
+            <img
+              class="h-9 w-auto"
+              src="https://pxdraft.com/themeforest/jenna/assets/img/logo-light.svg"
+              alt="JENNA"
+            />
+          </div>
+
+          <div class="hidden lg:flex space-x-6 items-center">
+            <a
+              href="#home"
+              class="underline underline-offset-8 decoration-2 text-white py-2 px-1 text-md font-bold"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-white py-2 text-md font-bold"
+              >About Me</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-300 hover:text-white py-2 text-md font-bold"
+              >Projects</a
+            >
+            <a
+              href="#services"
+              class="text-gray-300 hover:text-white py-2 text-md font-bold"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-white py-2 text-md font-bold"
+              >Contact</a
+            >
+            <button
+              class="bg-blue-500 hover:bg-transparent border-2 border-transparent hover:border-white text-white py-3 px-8 rounded-full uppercase duration-300 ease-in-out"
+            >
+              Let's Talk
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:hidden" id="mobile-menu" class="w-full bg-[#07233B]">
+        <div class="flex flex-col items-center space-y-6 py-6">
+          <a href="#" class="text-white py-2 text-md font-bold">Home</a>
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white py-2 text-md font-bold"
+            >About Me</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white py-2 text-md font-bold"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white py-2 text-md font-bold"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:text-white py-2 text-md font-bold"
+            >Contact</a
+          >
+          <button
+            class="bg-blue-500 hover:bg-transparent border-2 border-transparent hover:border-white text-white py-3 px-8 rounded-full uppercase duration-300 ease-in-out"
+          >
+            Let's Talk
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto pt-32 px-6 lg:px-12"  id="home">
+
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
+      
+        <div class="text-white space-y-5 w-full md:w-2/5 text-center md:text-left">
+          <h6><span class="bg-[#0788ff33] px-5 py-2 font-serif rounded-md uppercase">Jenna Ortega</span></h6>
+          <h1 class="text-5xl sm:text-6xl md:text-7xl font-medium uppercase">Hey! I'm Jenna</h1>
+          <h1 class="text-5xl sm:text-6xl md:text-6xl font-bold text-blue-600 uppercase">I'm a Developer</h1>
+          <p class="text-xl mt-4 mb-6">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+       
+          <div class="flex flex-col md:flex-row gap-8 justify-center md:justify-start items-center">
+            <a href="#">
+              <button class="bg-blue-500 font-semibold my-6 hover:bg-transparent hover:border-white border-2 border-transparent text-white py-2 px-8 rounded-full uppercase flex items-center justify-center space-x-2 transition-all duration-300 ease-in-out">
+                <span>Get in Touch</span>
+                <span class="text-2xl sm:text-3xl">→</span>
+              </button>
+            </a>
+  
+            <div class="flex gap-6 mt-4 md:mt-0">
+            
+              <a href="#" class="facebook bg-blue-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 320 512">
+                  <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                </svg>
+              </a>
+              <a href="#" class="dribbble bg-pink-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300">
+                <img src="./dribbble-logo.svg" alt="Dribbble" class="w-6 h-6 filter invert">
+              </a>
+              <a href="#" class="linkedin bg-blue-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 448 512">
+                  <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+   
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="https://pxdraft.com/themeforest/jenna/assets/img/home-banner.png" alt="Banner Image">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#052d4d] px-12 flex gap-12 items-center overflow-x-auto slider-overflow w-full "id="about">
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56">
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56">
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56">
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56">
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56">
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56">
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56">
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56">
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56">
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56">
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56">
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56">
+    </div>
+
+    <div class="flex flex-col py-20 gap-12 mx-auto items-center lg:flex-row text-white max-w-7xl w-full px-6 md:px-12 justify-center">
+  
+    
+      <div class="md:w-5/12 mb-8 md:mb-0 relative">
+        <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="https://pxdraft.com/themeforest/jenna/assets/img/about-banner.png" alt="About Image">
+      </div>
+      
+    
+      <div class="max-w-[580px] w-full relative text-center md:text-left">
+        <!-- <img src="./effect-2.svg" alt="Effect" class="absolute left-[30rem] bottom-[29rem] md:right-[-6rem] sx:hidden"> -->
+        
+        <div>
+      
+          <h6 class="text-white font-semibold uppercase tracking-widest">
+            <span class="bg-[#0788ff33] px-5 py-2 font-serif rounded-md">About Us</span>
+          </h6>
+          <h1 class="text-4xl sm:text-5xl font-semibold uppercase leading-tight mt-4">
+            I am available for <span class="text-blue-400">UI/UX design</span> projects
+          </h1>
+          
+          <p class="text-xl mt-4 mb-6 text-justify mx-auto leading-relaxed">
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+          </p>
+          
+          <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start text-center md:text-left">
+            <div class="border-2 border-gray-500 py-4 px-6 w-36 rounded-xl">
+              <div class="text-3xl font-semibold pb-2">280+</div>
+              <div class="text-sm text-gray-400">Google Reviews</div>
+            </div>
+            <div class="border-2 border-gray-500 py-4 px-6 w-36 rounded-xl">
+              <div class="text-3xl font-semibold pb-2">15+</div>
+              <div class="text-sm text-gray-400">Years Experience</div>
+            </div>
+            <div class="border-2 border-gray-500 py-4 px-6 w-36 rounded-xl">
+              <div class="text-3xl font-semibold pb-2">49+</div>
+              <div class="text-sm text-gray-400">Award Winning</div>
+            </div>
+          </div>
+        
+          <a href="#" class="block mt-10 text-center md:text-left">
+            <button class="bg-blue-500 font-semibold hover:bg-transparent hover:border-white border-2 border-transparent text-white py-2 px-8 rounded-full uppercase flex items-center justify-center space-x-2 transition-all duration-300 ease-in-out mx-auto md:mx-0">
+              <span>Get in Touch</span>
+              <span class="text-2xl sm:text-3xl">→</span>
+            </button>
+          </a>
+        </div>
+        <img src="./effect-1.svg" alt="Effect" class="absolute right-[58rem] -z-10 top-[18rem] md:right-[40rem] md:top-[15rem]">
+      </div>
+    </div>
+    
+    <div class="bg-[#052d4d] lg:px-24 py-12" id="projects">
+
+      <div class="space-y-4">
+        <h6 class="text-white font-semibold uppercase tracking-widest">
+          <span class="bg-[#0788ff33] px-4 py-2 rounded-md">My Work</span>
+        </h6>
+        <h1 class="text-4xl sm:text-5xl text-white font-semibold leading-tight">
+          Recent Projects
+        </h1>
+      </div>
+    
+    
+      <div class="flex space-x-6 overflow-x-auto slider-overflow rounded-lg max-w-[100rem] mx-auto mt-12">
+
+        <div class="w-[400px] bg-white rounded-lg overflow-hidden shadow-lg">
+        
+          <div class="relative group p-4">
+          
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+            
+            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+    
+         
+          <div class="p-5 flex justify-between items-center">
+        
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+        
+    
+            <button
+              class="rounded-full w-12 h-12 flex justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+    
+        <div class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg">
+        
+          <div class="relative group p-4">
+          
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+            
+            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+    
+         
+          <div class="px-5 flex justify-between items-center">
+        
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+        
+    
+            <button
+              class="rounded-full w-12 h-12 flex justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+    
+        <div class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg">
+        
+          <div class="relative group p-4">
+          
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+            
+            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+    
+         
+          <div class="px-5 flex justify-between items-center">
+        
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+        
+    
+            <button
+              class="rounded-full w-12 h-12 flex justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+    
+        <div class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg">
+        
+          <div class="relative group p-4">
+          
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+            
+            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+    
+         
+          <div class="px-5 flex justify-between items-center">
+        
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+        
+    
+            <button
+              class="rounded-full w-12 h-12 flex justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+        <div class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg">
+        
+          <div class="relative group p-4">
+          
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+            
+            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+    
+         
+          <div class="px-5 flex justify-between items-center">
+        
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+        
+    
+            <button
+              class="rounded-full w-12 h-12 flex justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+    
+        <div class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg">
+        
+          <div class="relative group p-4">
+          
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+            
+            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+    
+         
+          <div class="px-5 flex justify-between items-center">
+        
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+        
+    
+            <button
+              class="rounded-full w-12 h-12 flex justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+    
+      </div>
+      <div class="py-12" id="services">
+
+        <div class="space-y-4 uppercase px-16">
+          <h6 class="text-white tracking-widest">
+            <span class="bg-[#0788ff33] font-serif px-4 py-2 rounded-md">services</span>
+          </h6>
+          <h1 class="text-4xl sm:text-4xl text-white font-semibold leading-tight">
+            design <span class="text-blue-500">services</span> I am providing
+          </h1>
+        </div>
+      
+      
+        <div class="py-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[20rem] w-[16rem] bg-[url('./service-01.jpg')]">
+              <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+                <div class="icon mb-4">
+                  <img src="./paint-brush.png" alt="paint-brush" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+                </div>
+                <h5 class="text-white text-xl font-semibold mb-2">Website Design</h5>
+                <p class="text-white text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="rating flex space-x-2">
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+        
+            <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[20rem] w-[16rem] bg-[url('./service-02.jpg')]">
+              <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+                <div class="icon mb-4">
+                  <img src="./square-code.png" alt="paint-brush" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+                </div>
+                <h5 class="text-white text-xl font-semibold mb-2">Website Design</h5>
+                <p class="text-white text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="rating flex space-x-2">
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+        
+            <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[20rem] w-[16rem] bg-[url('./service-01.jpg')]">
+              <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+                <div class="icon mb-4">
+                  <img src="./dashboard.png" alt="paint-brush" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+                </div>
+                <h5 class="text-white text-xl font-semibold mb-2">SEO Marketing</h5>
+                <p class="text-white text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="rating flex space-x-2">
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+        
+            <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[20rem] w-[16rem] bg-[url('./service-01.jpg')]">
+              <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+                <div class="icon mb-4">
+                  <img src="./palette.png" alt="paint-brush" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+                </div>
+                <h5 class="text-white text-xl font-semibold mb-2">Graphic Design</h5>
+                <p class="text-white text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="rating flex space-x-2">
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                  <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+
+
+
+  </body>
+</html>

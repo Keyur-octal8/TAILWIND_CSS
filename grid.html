@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+</head>
+
+<body>
+    <div class="text-center bg-yellow-500 text-5xl my-10">Grid</div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Grid Template Columns</div>
+    <div class="grid container mx-auto grid-cols-4 text-center text-2xl gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 rounded-xl">04</div>
+        <div class="bg-pink-500 p-6 rounded-xl">05</div>
+        <div class="bg-pink-500 p-6 rounded-xl">06</div>
+        <div class="bg-pink-500 p-6 rounded-xl">07</div>
+        <div class="bg-pink-500 p-6 rounded-xl">08</div>
+        <div class="bg-pink-500 p-6 rounded-xl">09</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Subgrid</div>
+    <div class="grid container mx-auto grid-cols-4 text-2xl text-center gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 rounded-xl">04</div>
+        <div class="grid grid-cols-subgrid col-span-4">
+            <div class="col-start-3 bg-blue-700 text-white p-6 rounded-xl">05</div>
+        </div>
+        <div class="grid grid-cols-subgrid col-span-4">
+            <div class="col-start-2 bg-blue-700 text-white p-6 rounded-xl">06</div>
+        </div>
+        <div class="grid grid-cols-subgrid col-span-1">
+            <div class="col-start-1 bg-pink-500 p-6 rounded-xl">07</div>
+        </div>
+        <div class="bg-pink-500 p-6 rounded-xl">08</div>
+        <div class="bg-pink-500 p-6 rounded-xl">09</div>
+        <div class="bg-pink-500 p-6 rounded-xl">10</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Spanning columns</div>
+    <div class="grid container mx-auto grid-cols-3 text-2xl text-center gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-yellow-400 p-6 rounded-xl col-span-2">04</div>
+        <div class="bg-pink-500 p-6 rounded-xl">05</div>
+        <div class="bg-pink-500 p-6 rounded-xl">06</div>
+        <div class="bg-yellow-400 p-6 rounded-xl col-span-2">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Starting and ending lines</div>
+
+    <div class="grid grid-cols-6 container mx-auto text-2xl text-center gap-4">
+        <div class="col-start-2 col-span-4 bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="col-start-1 col-end-3 bg-yellow-400 p-6 rounded-xl">02</div>
+        <div class="col-end-7 col-span-2 bg-yellow-400 p-6 rounded-xl">03</div>
+        <div class="col-start-1 col-end-7 text-white bg-blue-700 p-6 rounded-xl">04</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Specifying the rows in a grid</div>
+
+    <div class="grid container mx-auto text-center text-2xl grid-rows-4 grid-flow-col gap-4">
+        <div class="bg-pink-500 p-6 rounded-xl">01</div>
+        <div class="bg-pink-500 p-6 rounded-xl">02</div>
+        <div class="bg-pink-500 p-6 rounded-xl">03</div>
+        <div class="bg-pink-500 p-6 rounded-xl">04</div>
+        <div class="bg-pink-500 p-6 rounded-xl">05</div>
+        <div class="bg-pink-500 p-6 rounded-xl">06</div>
+        <div class="bg-pink-500 p-6 rounded-xl">07</div>
+        <div class="bg-pink-500 p-6 rounded-xl">08</div>
+        <div class="bg-pink-500 p-6 rounded-xl">09</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Subgrid</div>
+
+    <div class="grid container mx-auto text-center text-2xl grid-rows-4 grid-flow-col gap-4">
+        <div class="bg-purple-500 p-6 rounded-xl">01</div>
+        <div class="bg-purple-500 p-6 rounded-xl">03</div>
+        <div class="bg-purple-500 p-6 rounded-xl">04</div>
+        <div class="bg-purple-500 p-6 rounded-xl">02</div>
+        <div class="bg-purple-500 p-6 rounded-xl">05</div>
+        <div class="grid grid-rows-subgrid gap-4 row-span-3">
+            <div class="row-start-2 bg-orange-500 p-6 rounded-xl ">06</div>
+        </div>
+        <div class="bg-purple-500 p-6 rounded-xl">07</div>
+        <div class="bg-purple-500 p-6 rounded-xl">08</div>
+        <div class="bg-purple-500 p-6 rounded-xl">09</div>
+        <div class="bg-purple-500 p-6 rounded-xl">10</div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Spanning rows</div>
+
+    <div class="grid container mx-auto text-center grid-flow-col gap-4">
+        <div class="grid grid-rows-3 text-2xl grid-flow-col gap-4">
+            <div class="row-span-3 bg-purple-500 p-6 rounded-xl">01</div>
+            <div class="col-span-2 bg-purple-500 p-6 rounded-xl">02</div>
+            <div class="col-span-2 row-span-2 bg-purple-500 p-6 rounded-xl">03</div>
+        </div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Starting and ending lines</div>
+
+    <div class="grid container mx-auto text-2xl text-center grid-flow-col gap-4">
+        <div class="grid grid-rows-3 grid-flow-col gap-4 text-white">
+            <div class="row-start-2 row-span-2 bg-blue-700 p-6 rounded-xl">01</div>
+            <div class="row-end-3 row-span-2 bg-blue-700 p-6 rounded-xl">02</div>
+            <div class="row-start-1 row-end-4 bg-blue-700 p-6 rounded-xl">03</div>
+        </div>
+    </div>
+
+    <div class="mx-auto text-center bg-green-500 text-5xl my-10">Controlling grid element placement</div>
+    <div>
+
+        <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 container mx-auto text-center text-2xl gap-4">
+            <div class="col-span-2 bg-pink-500 rounded-xl p-6">01</div>
+            <div class="col-span-2 bg-pink-500 rounded-xl p-6">02</div>
+            <div class="bg-pink-500 rounded-xl p-6">03</div>
+            <div class="bg-pink-500 rounded-xl p-6">04</div>
+            <div class="bg-pink-500 rounded-xl p-6">05</div>
+        </div>
+    </div>
+</body>
+
+</html>

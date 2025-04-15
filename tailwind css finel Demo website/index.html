@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @layer utilities {
+        .slider-overflow::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-r from-[#07233B] via-[#041D34] to-[#050C16] min-h-screen bg-no-repeat"
+  >
+
+  <div>
+  <nav class="sticky top-0 z-10 bg-black">
+    <div class="mx-auto max-w-7xl px-6 py-5">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="lg:hidden">
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="text-gray-400 hover:bg-gray-700 focus:ring-2 focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+          </button>
+        </div>
+  
+        <div class="flex">
+          <img class="h-9 w-auto" src="https://pxdraft.com/themeforest/jenna/assets/img/logo-light.svg" alt="JENNA"/>
+        </div>
+  
+        <div class="hidden lg:flex space-x-6 items-center">
+          <a href="#home" class="underline underline-offset-8 decoration-2 text-white py-2 px-1 text-md font-bold">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-white py-2 text-md font-bold">About Me</a>
+          <a href="#projects" class="text-gray-300 hover:text-white py-2 text-md font-bold">Projects</a>
+          <a href="#services" class="text-gray-300 hover:text-white py-2 text-md font-bold">Services</a>
+          <a href="#contact" class="text-gray-300 hover:text-white py-2 text-md font-bold">Contact</a>
+          <button class="bg-blue-500 hover:bg-transparent border-2 border-transparent hover:border-white text-white py-3 px-8 rounded-full uppercase duration-300 ease-in-out">Let's Talk</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="hidden" id="mobile-menu" class="w-full bg-[#07233B]">
+      <div class="flex flex-col items-center space-y-6 py-6">
+        <a href="#" class="text-white py-2 text-md font-bold">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white py-2 text-md font-bold">About Me</a>
+        <a href="#" class="text-gray-300 hover:text-white py-2 text-md font-bold">Projects</a>
+        <a href="#" class="text-gray-300 hover:text-white py-2 text-md font-bold">Services</a>
+        <a href="#" class="text-gray-300 hover:text-white py-2 text-md font-bold">Contact</a>
+        <button class="bg-blue-500 hover:bg-transparent border-2 border-transparent hover:border-white text-white py-3 px-8 rounded-full uppercase duration-300 ease-in-out">Let's Talk</button>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mx-auto pt-32 px-6 lg:px-12 relative" id="home">
+    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
+      <div class="text-white space-y-5 w-full md:w-2/5 text-center md:text-left">
+        <h6><span class="bg-[#0788ff33] px-5 py-2 font-serif rounded-md uppercase">Jenna Ortega</span></h6>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-medium uppercase">Hey! I'm Jenna</h1>
+        <h1 class="text-5xl sm:text-6xl md:text-6xl font-bold text-blue-600 uppercase">I'm a Developer</h1>
+        <p class="text-xl mt-4 mb-6">
+          Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.
+        </p>
+  
+        <div class="flex flex-col md:flex-row gap-8 justify-center md:justify-start items-center">
+          <a href="#">
+            <button class="bg-blue-500 font-semibold my-6 hover:bg-transparent hover:border-white border-2 border-transparent text-white py-2 px-8 rounded-full uppercase flex items-center justify-center space-x-2 transition-all duration-300 ease-in-out">
+              <span>Get in Touch</span>
+              <span class="text-2xl sm:text-3xl">→</span>
+            </button>
+          </a>
+  
+          <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#" class="facebook bg-blue-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 320 512">
+                <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+              </svg>
+            </a>
+            <a href="#" class="dribbble bg-pink-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300">
+              <img src="./dribbble-logo.svg" alt="Dribbble" class="w-6 h-6 filter invert"/>
+            </a>
+            <a href="#" class="linkedin bg-blue-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 448 512">
+                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="https://pxdraft.com/themeforest/jenna/assets/img/home-banner.png" alt="Banner Image"/>
+      </div>
+    </div>
+  </div>
+  
+
+    <div
+      class="bg-[#052d4d] px-12 flex gap-12 items-center overflow-x-auto slider-overflow w-full"
+      id="about"
+    >
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56" />
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56" />
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56" />
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56" />
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56" />
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56" />
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56" />
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56" />
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56" />
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56" />
+      <img src="./brand-1.svg" alt="Brand 1" class="w-56 h-56" />
+      <img src="./brand-2.svg" alt="Brand 2" class="w-56 h-56" />
+    </div>
+
+    <div
+      class="flex flex-col py-20 gap-12 mx-auto items-center lg:flex-row text-white max-w-7xl w-full px-6 md:px-12 justify-center"
+    >
+      <div class="md:w-5/12 mb-8 md:mb-0 relative">
+        <img
+          class="w-full h-auto md:w-full object-cover -z-5 rounded-lg shadow-lg"
+          src="https://pxdraft.com/themeforest/jenna/assets/img/about-banner.png"
+          alt="About Image"
+        />
+      </div>
+
+      <div class="max-w-[580px] w-full relative">
+
+        <div class="text-center md:text-left">
+          <h6 class="text-white font-semibold uppercase tracking-widest">
+            <span class="bg-[#0788ff33] px-5 py-2 font-serif rounded-md"
+              >About Us</span
+            >
+          </h6>
+          <h1
+            class="text-4xl sm:text-4xl font-semibold uppercase leading-tight mt-4"
+          >
+            I am available for
+            <span class="text-blue-400">UI/UX design</span> projects
+          </h1>
+          <p class="text-xl mt-4 mb-6 text-justify mx-auto leading-relaxed">
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+            below for those interested. Sections 1.10.32 and 1.10.33 from "de
+            Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+            exact original form, accompanied by English versions from the 1914
+            translation by H. Rackham.
+          </p>
+          <div
+            class="flex flex-col md:flex-row gap-2 justify-center md:justify-start text-center md:text-left"
+          >
+            <div class="border-2 border-gray-500 py-4 px-6 w-38 rounded-xl">
+              <div class="text-3xl font-semibold pb-2">280+</div>
+              <div class="text-sm text-gray-400">Google Reviews</div>
+            </div>
+            <div class="border-2 border-gray-500 py-4 px-6 w-38 rounded-xl">
+              <div class="text-3xl font-semibold pb-2">15+</div>
+              <div class="text-sm text-gray-400">Years Experience</div>
+            </div>
+            <div class="border-2 border-gray-500 py-4 px-6 w-38 rounded-xl">
+              <div class="text-3xl font-semibold pb-2">49+</div>
+              <div class="text-sm text-gray-400">Award Winning</div>
+            </div>
+          </div>
+
+          <a href="#" class="block mt-10 text-center md:text-left">
+            <button
+              class="bg-blue-500 font-semibold hover:bg-transparent hover:border-white border-2 border-transparent text-white py-2 px-8 rounded-full uppercase flex items-center justify-center space-x-2 transition-all duration-300 ease-in-out mx-auto md:mx-0"
+            >
+              <span>Get in Touch</span>
+              <span class="text-2xl sm:text-3xl">→</span>
+            </button>
+          </a>
+        </div>
+        <img
+          src="./effect-1.svg"
+          alt=""
+          class="absolute right-[58rem] -z-10 top-[18rem]"
+        />
+      </div>
+    </div>
+
+    <div class="bg-[#052d4d] px-10 lg:px-56 py-12" id="projects">
+      <div class="space-y-4 max-w-[90rem] mx-auto">
+        <h6 class="text-white font-semibold uppercase tracking-widest">
+          <span class="bg-[#0788ff33] px-4 py-2 rounded-md">My Work</span>
+        </h6>
+        <h1 class="text-4xl sm:text-5xl text-white font-semibold leading-tight">
+          Recent Projects
+        </h1>
+      </div>
+
+      <div
+        class="flex space-x-6 overflow-x-auto slider-overflow rounded-lg max-w-[90rem] mx-auto mt-12"
+      >
+        <div
+          class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg"
+        >
+          <div class="relative group p-4">
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-1.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+
+            <div
+              class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="px-5 flex justify-between items-center">
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+
+            <button
+              class="rounded-full w-12 h-12 flex m-3 justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg"
+        >
+          <div class="relative group p-4">
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-2.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+
+            <div
+              class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="px-5 flex justify-between items-center">
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+
+            <button
+              class="rounded-full w-12 h-12 flex m-3 justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg"
+        >
+          <div class="relative group p-4">
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-3.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+
+            <div
+              class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="px-5 flex justify-between items-center">
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+
+            <button
+              class="rounded-full w-12 h-12 flex m-3 justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg"
+        >
+          <div class="relative group p-4">
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-4.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+
+            <div
+              class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="px-5 flex justify-between items-center">
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+
+            <button
+              class="rounded-full w-12 h-12 flex m-3 justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex-none w-[400px] bg-white rounded-lg overflow-hidden shadow-lg"
+        >
+          <div class="relative group p-4">
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="./popup-project-5.jpg"
+                alt="Project Image 1"
+                class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-50"
+              />
+            </div>
+
+            <div
+              class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            >
+              <button
+                class="rounded-full w-16 h-16 flex justify-center items-center font-bold text-3xl text-black bg-white transition duration-300 ease-in-out"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="px-5 flex justify-between items-center">
+            <div>
+              <h5 class="text-xl font-bold text-gray-800">Website Design</h5>
+              <span class="text-sm text-gray-500">Web Design, App Design</span>
+            </div>
+
+            <button
+              class="rounded-full w-12 h-12 flex m-3 justify-center items-center text-3xl text-white bg-blue-500 hover:bg-black transition duration-300 ease-in-out"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-12 max-w-[90rem] mx-auto" id="services">
+      <div class="space-y-4 uppercase">
+        <h6 class="text-white tracking-widest">
+          <span class="bg-[#0788ff33] font-serif px-4 py-2 rounded-md"
+            >services</span
+          >
+        </h6>
+        <h1 class="text-4xl sm:text-4xl text-white font-semibold leading-tight">
+          design <span class="text-blue-500">services</span> I am providing
+        </h1>
+      </div>
+
+      <div class="py-10">
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 sm:grid-cols-1 w-[18rem] md:w-[43rem] lg:w-[55rem] xl:w-[82rem] 2xl:w-[92rem] mx-auto">
+   
+          <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[25rem] w-full bg-[url('./service-03.jpg')]">
+            <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+              <div class="icon mb-4">
+                <img src="./analytics.png" alt="analytics" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+              </div>
+              <h5 class="text-white text-xl font-semibold mb-2">Data Analytics</h5>
+              <p class="text-white text-sm mb-4">
+                Unlock insights and drive decision-making with advanced data analytics services.
+              </p>
+              <div class="rating flex space-x-2">
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+              </div>
+            </div>
+          </div>
+      
+          <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[25rem] w-full bg-[url('./service-04.jpg')]">
+            <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+              <div class="icon mb-4">
+                <img src="./social-media.png" alt="social media" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+              </div>
+              <h5 class="text-white text-xl font-semibold mb-2">Social Media Marketing</h5>
+              <p class="text-white text-sm mb-4">
+                Enhance your brand’s online presence with expert social media strategies.
+              </p>
+              <div class="rating flex space-x-2">
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+              </div>
+            </div>
+          </div>
+
+           <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[25rem] w-full bg-[url('./service-04.jpg')]">
+            <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+              <div class="icon mb-4">
+                <img src="./social-media.png" alt="social media" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+              </div>
+              <h5 class="text-white text-xl font-semibold mb-2">Social Media Marketing</h5>
+              <p class="text-white text-sm mb-4">
+                Enhance your brand’s online presence with expert social media strategies.
+              </p>
+              <div class="rating flex space-x-2">
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+              </div>
+            </div>
+          </div>
+
+           <div class="relative rounded-lg overflow-hidden bg-cover bg-center h-[25rem] w-full bg-[url('./service-04.jpg')]">
+            <div class="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black">
+              <div class="icon mb-4">
+                <img src="./social-media.png" alt="social media" class="w-12 h-12 p-3 bg-blue-500 rounded-lg" />
+              </div>
+              <h5 class="text-white text-xl font-semibold mb-2">Social Media Marketing</h5>
+              <p class="text-white text-sm mb-4">
+                Enhance your brand’s online presence with expert social media strategies.
+              </p>
+              <div class="rating flex space-x-2">
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star.png" alt="star rating" class="w-4 h-4" />
+                <img src="./star-removebg-preview.png" alt="star rating" class="w-4 h-4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="bg-[#052d4d] px-10 lg:px-56 py-12">
+      <div class="space-y-4 max-w-[90rem] mx-auto">
+        <h6 class="text-white font-semibold uppercase tracking-widest">
+          <span class="bg-[#0788ff33] px-4 py-2 rounded-md">Experience</span>
+        </h6>
+        <h1
+          class="text-4xl sm:text-5xl text-white uppercase font-semibold leading-tight"
+        >
+          My Work <span class="text-blue-500"> Experience </span>
+        </h1>
+      </div>
+
+      <div class="flex flex-wrap p-5 my-10 bg-[#043e69] rounded-lg mx-auto gap-6">
+        <div
+          class="bg-[#0788ff] text-white rounded-lg p-5 w-full sm:w-[32rem] md:w-[40rem] lg:w-[20rem] h-[180px] flex flex-col justify-between"
+        >
+          <h4 class="text-2xl font-bold">Front-end Developer</h4>
+          <p class="uppercase text-sm">welab | remote</p>
+          <p class="uppercase text-sm">Jan 2019 - Present</p>
+          <button
+            class="uppercase text-black rounded-full bg-white font-semibold px-3 mt-2 w-fit"
+          >
+            Full Time
+          </button>
+        </div>
+
+        <div class="w-full sm:w-auto flex-1">
+          <h1
+            class="text-lg sm:text-4xl text-white font-semibold leading-tight mb-4"
+          >
+            About the Company
+          </h1>
+          <p class="text-white text-sm sm:text-base leading-relaxed">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus pariatur sint optio eius at dignissimos, nam quae esse
+            iusto. Veniam nostrum nobis quod, soluta aliquid quos! Eveniet,
+            nesciunt! Sed nesciunt et iste obcaecati corrupti, vel facilis
+            neque? Eligendi, dignissimos corrupti? Dignissimos enim nihil, saepe
+            qui repellendus, nulla optio ex, placeat voluptatum vero neque ullam
+            officiis voluptates maiores repudiandae? Reprehenderit earum fuga ad
+            architecto debitis recusandae repellat dolor id quae doloribus.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap p-5 my-10 bg-[#043e69] rounded-lg gap-6 mx-auto">
+        <div
+          class="bg-[#0788ff] text-white rounded-lg p-5 w-full sm:w-[32rem] md:w-[40rem] lg:w-[20rem] h-[180px] flex flex-col justify-between"
+        >
+          <h4 class="text-2xl font-bold">Front-end Developer</h4>
+          <p class="uppercase text-sm">welab | remote</p>
+          <p class="uppercase text-sm">Jan 2019 - Present</p>
+          <button
+            class="uppercase text-black rounded-full bg-white font-semibold px-3 mt-2 w-fit"
+          >
+            Full Time
+          </button>
+        </div>
+
+        <div class="w-full sm:w-auto flex-1">
+          <h1
+            class="text-lg sm:text-4xl text-white font-semibold leading-tight mb-4"
+          >
+            About the Company
+          </h1>
+          <p class="text-white text-sm sm:text-base leading-relaxed">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus pariatur sint optio eius at dignissimos, nam quae esse
+            iusto. Veniam nostrum nobis quod, soluta aliquid quos! Eveniet,
+            nesciunt! Sed nesciunt et iste obcaecati corrupti, vel facilis
+            neque? Eligendi, dignissimos corrupti? Dignissimos enim nihil, saepe
+            qui repellendus, nulla optio ex, placeat voluptatum vero neque ullam
+            officiis voluptates maiores repudiandae? Reprehenderit earum fuga ad
+            architecto debitis recusandae repellat dolor id quae doloribus.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap p-5 my-10 bg-[#043e69] rounded-lg gap-6 mx-auto">
+        <div
+          class="bg-[#0788ff] text-white rounded-lg p-5 w-full sm:w-[32rem] md:w-[40rem] lg:w-[20rem] h-[180px] flex flex-col justify-between"
+        >
+          <h4 class="text-2xl font-bold">Front-end Developer</h4>
+          <p class="uppercase text-sm">welab | remote</p>
+          <p class="uppercase text-sm">Jan 2019 - Present</p>
+          <button
+            class="uppercase text-black rounded-full bg-white font-semibold px-3 mt-2 w-fit"
+          >
+            Full Time
+          </button>
+        </div>
+
+        <div class="w-full sm:w-auto flex-1">
+          <h1
+            class="text-lg sm:text-4xl text-white font-semibold leading-tight mb-4"
+          >
+            About the Company
+          </h1>
+          <p class="text-white text-sm sm:text-base leading-relaxed">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus pariatur sint optio eius at dignissimos, nam quae esse
+            iusto. Veniam nostrum nobis quod, soluta aliquid quos! Eveniet,
+            nesciunt! Sed nesciunt et iste obcaecati corrupti, vel facilis
+            neque? Eligendi, dignissimos corrupti? Dignissimos enim nihil, saepe
+            qui repellendus, nulla optio ex, placeat voluptatum vero neque ullam
+            officiis voluptates maiores repudiandae? Reprehenderit earum fuga ad
+            architecto debitis recusandae repellat dolor id quae doloribus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="py-20 px-6 md:px-12 mx-auto text-white max-w-7xl w-full">
+      <img src="./effect-3.svg" alt="" class="absolute" />
+      <h6
+        class="text-white text-center font-semibold uppercase my-6 tracking-widest"
+      >
+        <span class="bg-[#0788ff33] px-4 py-2 rounded-md">Testimonial</span>
+      </h6>
+      <h1
+        class="text-4xl sm:text-5xl text-center text-white uppercase font-semibold leading-tight"
+      >
+        Over <span class="text-blue-500">8,000+</span>
+      </h1>
+      <h1
+        class="text-4xl sm:text-5xl text-center text-white uppercase font-semibold leading-tight"
+      >
+        PEOPLE TRUST ME
+      </h1>
+      <img src="./effect-4.svg" alt="" class="absolute right-0" />
+      <div class="overflow-hidden">
+        <div class="flex overflow-x-auto slider-overflow py-6">
+          <div class="flex-shrink-0 xl:w-[76rem] lg:w-[60rem] sm:w-[40rem]">
+            <div class="bg-transparent rounded-lg shadow-lg px-48 py-6">
+              <div class="mb-7">
+                <img
+                  src="../images/asset 50.jpeg"
+                  alt="Pamela Anders"
+                  class="w-32 h-32 mx-auto border-8 border-gray-500 rounded-full"
+                />
+              </div>
+              <div class="text-white text-center mb-7">
+                Donec tellus sem, tempor ac purus a, porttitor lobortis purus.
+                Etiam quis nisl eget ex pulvinar consectetur. Suspendisse
+                potenti. Cras non elementum risus. Fusce massa tellus, consequat
+                a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt.
+                Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at
+                neque tortor. Pellentesque urna enim, ultricies at tortor eu,
+                elementum egestas leo.
+              </div>
+              <div class="text-white text-center mb-7">
+                <h6 class="text-xl font-semibold">Pamela Anders</h6>
+                <span class="text-sm text-gray-500">Company Name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0 w-[76rem]">
+            <div class="bg-transparent rounded-lg shadow-lg px-48 py-6">
+              <div class="mb-7">
+                <img
+                  src="../images/asset 51.jpeg"
+                  alt="Pamela Anders"
+                  class="w-32 h-32 mx-auto border-8 border-gray-500 rounded-full"
+                />
+              </div>
+              <div class="text-white text-center mb-7">
+                Donec tellus sem, tempor ac purus a, porttitor lobortis purus.
+                Etiam quis nisl eget ex pulvinar consectetur. Suspendisse
+                potenti. Cras non elementum risus. Fusce massa tellus, consequat
+                a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt.
+                Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at
+                neque tortor. Pellentesque urna enim, ultricies at tortor eu,
+                elementum egestas leo.
+              </div>
+              <div class="text-white text-center mb-7">
+                <h6 class="text-xl font-semibold">Pamela Anders</h6>
+                <span class="text-sm text-gray-500">Company Name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0 w-[76rem]">
+            <div class="bg-transparent rounded-lg shadow-lg px-48 py-6">
+              <div class="mb-7">
+                <img
+                  src="../images/asset 52.jpeg"
+                  alt="Pamela Anders"
+                  class="w-32 h-32 mx-auto border-8 border-gray-500 rounded-full"
+                />
+              </div>
+              <div class="text-white text-center mb-7">
+                Donec tellus sem, tempor ac purus a, porttitor lobortis purus.
+                Etiam quis nisl eget ex pulvinar consectetur. Suspendisse
+                potenti. Cras non elementum risus. Fusce massa tellus, consequat
+                a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt.
+                Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at
+                neque tortor. Pellentesque urna enim, ultricies at tortor eu,
+                elementum egestas leo.
+              </div>
+              <div class="text-white text-center mb-7">
+                <h6 class="text-xl font-semibold">Pamela Anders</h6>
+                <span class="text-sm text-gray-500">Company Name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0 w-[76rem]" id="contact">
+            <div class="bg-transparent rounded-lg shadow-lg px-48 py-6">
+              <div class="mb-7">
+                <img
+                  src="../images/asset 53.jpeg"
+                  alt="Pamela Anders"
+                  class="w-32 h-32 mx-auto border-8 border-gray-500 rounded-full"
+                />
+              </div>
+              <div class="text-white text-center mb-7">
+                Donec tellus sem, tempor ac purus a, porttitor lobortis purus.
+                Etiam quis nisl eget ex pulvinar consectetur. Suspendisse
+                potenti. Cras non elementum risus. Fusce massa tellus, consequat
+                a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt.
+                Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at
+                neque tortor. Pellentesque urna enim, ultricies at tortor eu,
+                elementum egestas leo.
+              </div>
+              <div class="text-white text-center mb-7">
+                <h6 class="text-xl font-semibold">Pamela Anders</h6>
+                <span class="text-sm text-gray-500">Company Name</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-20 border-2 border-blue-800 rounded-md overflow-hidden">
+          <div class="bg-[#031f38] h-56">
+            <div class="w-full sm:w-auto text-start flex xl:text-start p-10">
+              <img
+                src="https://pxdraft.com/themeforest/jenna/assets/img/contact-us.png"
+                alt="Contact Us"
+                class="h-full w-80 m-10 hidden lg:block"
+              />
+
+              <div>
+                <h1
+                  class="text-lg sm:text-4xl text-white font-semibold leading-tight mb-4"
+                >
+                  Let’s Discuss Your Project
+                </h1>
+                <p
+                  class="text-white text-sm sm:text-lg xs:text-center leading-relaxed w-4/5"
+                >
+                  Always available for freelancing if the right project comes
+                  along, Feel free to contact me.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#032e56] flex sm:flex-col lg:flex-row justify-between p-10">
+            <div
+              class="flex lg:items-end md:items-center px-10 py-8 text-start"
+            >
+              <div class="space-y-4">
+                <p class="uppercase text-xs text-gray-400">Write an e-mail</p>
+                <p class="text-2xl font-semibold">sample@domain.com</p>
+                <p class="uppercase text-xs text-gray-400">Write a phone</p>
+                <p class="text-2xl pb-6 font-semibold">+044 9696 9696 3636</p>
+
+                <div class="flex gap-6">
+                  <a
+                    href="#"
+                    class="facebook bg-blue-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300"
+                    aria-label="Facebook"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="dribbble bg-pink-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300"
+                    aria-label="Dribbble"
+                  >
+                    <img
+                      src="./dribbble-logo.svg"
+                      alt="Dribbble"
+                      class="w-6 h-6 filter invert"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="linkedin bg-blue-500 h-12 w-12 border-2 border-white rounded-full flex items-center justify-center hover:translate-y-[-2px] ease-in-out duration-300"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="form" class="xl:w-2/3 lg:w-3/2 sm:w-full px-10 py-8">
+              <form id="contact-form">
+                <div class="grid gap-4 md:grid-cols-2">
+                  <div class="col-span-1">
+                    <div class="form-group text-start">
+                      <label for="name" class="block text-sm font-medium"
+                        >First name</label
+                      >
+                      <input
+                        name="Name"
+                        id="name"
+                        placeholder="Name *"
+                        class="mt-1 p-2 border bg-white bg-opacity-5 border-gray-300 rounded-md w-full"
+                        type="text"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-span-1">
+                    <div class="form-group text-start">
+                      <label for="email" class="block text-sm font-medium"
+                        >Your Email</label
+                      >
+                      <input
+                        name="Email"
+                        id="email"
+                        placeholder="Email *"
+                        class="mt-1 p-2 border bg-white bg-opacity-5 border-gray-300 rounded-md w-full"
+                        type="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-span-2">
+                    <div class="form-group text-start">
+                      <label for="subject" class="block text-sm font-medium"
+                        >Subject</label
+                      >
+                      <input
+                        name="Subject"
+                        id="subject"
+                        placeholder="Subject *"
+                        class="mt-1 p-2 border bg-white bg-opacity-5 border-gray-300 rounded-md w-full"
+                        type="text"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-span-2">
+                    <div class="form-group text-start">
+                      <label for="message" class="block text-sm font-medium"
+                        >Your message</label
+                      >
+                      <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Your message *"
+                        rows="4"
+                        class="mt-1 p-2 border bg-white bg-opacity-5 border-gray-300 rounded-md w-full"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-span-2">
+                    <div class="send">
+                      <button
+                        type="submit"
+                        class="px-4 py-3 bg-sky-500 text-white border-2 border-transparent hover:border-white duration-900 rounded-full w-full hover:bg-black hover:text-white transition duration-300"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-white border-t-2 border-gray-500 py-10">
+      &copy;2023 copyright all right reserved
+    </footer>
+  </body>
+</html>
